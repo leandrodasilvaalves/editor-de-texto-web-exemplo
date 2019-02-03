@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/trumbowyg/dist/ui/trumbowyg.min.css">
+</head>
+<body>
+    <h1>Meu Editor de Texto</h1>
+    <div id="trumbowyg-demo"></div>
+    <button id="btn">Obter Texto</button>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/trumbowyg/dist/trumbowyg.min.js"></script>
+    <script>        
+        $('#trumbowyg-demo').trumbowyg();
+        $('#btn').click(()=>{
+            console.log($('#trumbowyg-demo').trumbowyg('html'));
+        });
+    </script>
+</body>
+</html>
